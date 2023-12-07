@@ -64,11 +64,11 @@
 
         <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: medium;" embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
             <a-assets>
-                <video src="./assets/mov_bbb.mp4" preload="auto" id="vid" response-type="arraybuffer" loop crossorigin webkit-playsinline autoplay muted playsinline></video>
+                <video src="./assets/mov_bbb.mp4" preload="auto" id="vid" response-type="arraybuffer" autoplay loop="true"></video>
             </a-assets>
 
             <a-nft videohandler type="nft" url="https://superejay.github.io/ar-testing//assets/pinball" smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
-                <a-video src="#vid" position="50 150 -100" rotation="90 0 180" width="300" height="175"> </a-video>
+                <a-video src="#vid" position="50 150 -100" rotation="90 0 180" width="150" height="100"> </a-video>
             </a-nft>
             <a-entity camera></a-entity>
         </a-scene>
